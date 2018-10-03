@@ -1,18 +1,18 @@
 """
 
-[Time Conversion]
-
 12:05:45AM
 10:05:45AM
 
 >> 07:05:45PM
 >> 19:05:45
 
+Worked in all cases, but I'm sure it can be done
+more eloquently.
+
 """
 
 
 def timeConversion(s):
-
     time12 = list(s)
     time24 = []
 
@@ -41,7 +41,7 @@ def timeConversion(s):
         hours24 = int(s[:2]) + 12
         hours24 = str(hours24)
 
-        temp = [0,0]
+        temp = [0, 0]
         temp[:] = hours24[:]
 
         time24 = temp + (time12[2:8])
@@ -49,6 +49,5 @@ def timeConversion(s):
 
 
 if __name__ == '__main__':
-    s = input()
-    result = timeConversion(s)
+    result = timeConversion(input())
     print(result)

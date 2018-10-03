@@ -1,3 +1,10 @@
+"""
+
+Prints a staircase of size n.
+
+"""
+
+
 def print_a_staircase_of_size_n(n):
     iteration = 0
     for i in range(n):
@@ -10,9 +17,7 @@ def print_a_staircase_of_size_n(n):
         print("\n", end="")
 
 
-# print_a_staircase_of_size_n(5)
-
-
+# version 2.0, thanks Dork for believing in me
 def print_a_staircase_of_size_n(n):
     a = n
     for i in range(n):
