@@ -15,7 +15,7 @@ def birthdayCakeCandles(arr):
     if len(arr) == 1:
         return 1
 
-    # you can probably sort it backwards and remove the "candles". Eh, meh. TODO
+    # you can probably sort it backwards and remove the "candles". Eh, meh.
     arr.sort()
 
     # if all array elements are equal
