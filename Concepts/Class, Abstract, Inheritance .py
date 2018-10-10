@@ -11,7 +11,6 @@ REV - Class, Absctract, inheritance
 from abc import ABCMeta, abstractmethod
 
 
-# REV  - Class
 # A Class is like an object constructor, or a "blueprint" for creating objects.
 class Book(metaclass=ABCMeta):
     # Default values can be set here. Values without default can't be skipped during initialisation.
