@@ -13,7 +13,7 @@ stripping \n character from stdin
 
 """
 
-# REV - aliases
+# REV- - aliases
 import sys as s
 
 book = {}

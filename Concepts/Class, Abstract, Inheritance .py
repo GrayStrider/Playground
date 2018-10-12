@@ -4,7 +4,7 @@ Title: $title
 Author: $author
 Price: $price
 
-REV - Class, Absctract, inheritance
+REV- Class, Abstract, inheritance
 
 """
 

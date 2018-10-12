@@ -29,7 +29,8 @@ if __name__ == '__main__':
 
     sum_max, sum_temp = None, None
     for i in range(4):
-        for j in range(4):  # REV - multiline code formatting.
+        # REV- - multiline code formatting.
+        for j in range(4):
             sum_temp = a[i][j] \
                        + a[i][j + 1] \
                        + a[i][j + 2] \
