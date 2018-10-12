@@ -25,20 +25,20 @@ class Student(Person):
         self.firstName = firstName
         self.lastName = lastName
         self.idNumber = id
-        self.scores = scores
+        self.s = scores
 
     def calculate(self):
-        if int(sum(self.scores) / len(scores)) in range(90, 101):
+        if int(sum(self.s) / len(scores)) in range(90, 101):
             return "O"
-        elif int(sum(self.scores) / len(scores)) in range(80, 91):
+        elif int(sum(self.s) / len(scores)) in range(80, 91):
             return "E"
-        elif int(sum(self.scores) / len(scores)) in range(70, 81):
+        elif int(sum(self.s) / len(scores)) in range(70, 81):
             return "A"
-        elif int(sum(self.scores) / len(scores)) in range(55, 71):
+        elif int(sum(self.s) / len(scores)) in range(55, 71):
             return "P"
-        elif int(sum(self.scores) / len(scores)) in range(40, 56):
+        elif int(sum(self.s) / len(scores)) in range(40, 56):
             return "D"
-        elif int(sum(self.scores) / len(scores)) < 40:
+        elif int(sum(self.s) / len(scores)) < 40:
             return "T"
         else:
             return 0

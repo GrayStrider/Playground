@@ -22,7 +22,7 @@ class Book(object, metaclass=ABCMeta):
 
 class MyBook(Book):
     def __init__(self, title, author, price):
-        Book.__init__(self, title, author)
+        Book.__init__(self, title, author)  # Or - super().__init__
         self.price = price
 
     def display(self):

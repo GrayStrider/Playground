@@ -2,14 +2,16 @@
 
 REV - private elements via __.
 
+Find the largest difference between the elements in the array.
+
 """
 
 
 class Difference:
     def __init__(self, a):
-        self.__elements = a
+        self.__elem = a
         self.maximumDifference = None
 
     def computeDifference(self):
-        self.__elements.sort()
-        self.maximumDifference = self.__elements[len(self.__elements) - 1] - self.__elements[0]
+        self.__elem.sort()
+        self.maximumDifference = self.__elem[len(self.__elem) - 1] - self.__elem[0]

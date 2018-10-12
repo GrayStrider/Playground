@@ -21,7 +21,7 @@ def dec_to_bin(n):
     return bin
 
 
-# NOT working.
+# Does NOT work. Faulty algo probably.
 def bin_to_dec(n):
     dec = 0
     bin = str(n)
@@ -33,15 +33,15 @@ def bin_to_dec(n):
 
 
 def day10(n):
-    max, max_temp = 0, 0
+    max, max_tmp = 0, 0
     n = list(dec_to_bin(n))
     for i in range(len(n)):
         if n[i] == "1":
-            max_temp += 1
-            if max_temp > max:
-                max = max_temp
+            max_tmp += 1
+            if max_tmp > max:
+                max = max_tmp
         else:
-            max_temp = 0
+            max_tmp = 0
     return max
 
 
