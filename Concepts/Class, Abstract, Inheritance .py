@@ -13,9 +13,9 @@ from abc import ABCMeta, abstractmethod
 
 # A Class is like an object constructor, or a "blueprint" for creating objects.
 class Book(metaclass=ABCMeta):
-    # Default values can be set here. Values without default can't be skipped during initialisation.
-    # __init__ function is called every time new object of a class is created.
     def __init__(self, title, author):
+        # Default values can be set here. Values without default can't be skipped during initialisation.
+        # __init__ function is called every time new object of a class is created.
         self.title = title
         self.author = author
         self.type = "Book"

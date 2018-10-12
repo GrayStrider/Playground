@@ -13,7 +13,8 @@ stripping \n character from stdin
 
 """
 
-import sys
+# REV - aliases
+import sys as s
 
 book = {}
 # fill the dictionary
@@ -22,7 +23,7 @@ for i in range(int(input())):
     book[name] = number
 
 # compare with dictionary and print the results
-for line in sys.stdin:
+for line in s.stdin:
     line_ = line.rstrip("\n")
     if line_ in book:
         print("%s=%s" % (line_, book[line_]))
