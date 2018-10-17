@@ -19,7 +19,7 @@ class Solution:
             print(current.data, end=' ')
             current = current.next
 
-    def insert(self, head, data):
+    def insert(self, head, data): pass
 
 
 mylist = Solution()

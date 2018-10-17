@@ -1,7 +1,7 @@
 """
 
 Comments, docstrings #
-REV- - floor division, power
+REV-- - floor division, power
     //, power - ** and ^
 Assign value to variable
 REV- - "In interactive mode, the last printed expression is assigned to the variable ...."
