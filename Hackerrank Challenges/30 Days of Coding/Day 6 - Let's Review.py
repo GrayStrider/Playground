@@ -9,7 +9,6 @@ for i in range(0, t):
     print("waiting for input")
     string = str(input())
 
-    i = 0
     while i in range(len(string)):
         if i % 2 == 0:
             print(string[i], end="")

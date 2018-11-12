@@ -29,15 +29,15 @@ if __name__ == '__main__':
 
     sum_max, sum_temp = None, None
     for i in range(4):
-        # REV- - multiline code formatting.
         for j in range(4):
-            sum_temp = a[i][j] \
-                       + a[i][j + 1] \
-                       + a[i][j + 2] \
-                       + a[i + 1][j + 1] \
-                       + a[i + 2][j] \
-                       + a[i + 2][j + 1] \
-                       + a[i + 2][j + 2]
+            sum_temp \
+                = a[i][j] \
+                + a[i][j + 1] \
+                + a[i][j + 2] \
+                + a[i + 1][j + 1]\
+                + a[i + 2][j] \
+                + a[i + 2][j + 1] \
+                + a[i + 2][j + 2]
             if sum_max is None:
                 sum_max = sum_temp
             if sum_temp > sum_max:

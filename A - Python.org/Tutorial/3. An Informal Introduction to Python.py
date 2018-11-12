@@ -1,17 +1,14 @@
 """
 
 Comments, docstrings #
-REV-- - floor division, power
+REV--- - floor division, power
     //, power - ** and ^
-Assign value to variable
-REV- - "In interactive mode, the last printed expression is assigned to the variable ...."
-_
 
 Concatenate string, multiply
 String subscriptions, as in array. print("word"[3]) = d.
 Negative indicing: counting from the right: string[-1] = g
 
-REV- result of an empty slice isn't None!
+REV-- result of an empty  string slice isn't None! Intuitevely, it's "" - an empty string. If we apply that to an array, the result will be the empty array.
 slicing: word[0:1] = w, word[0:0] = "".
 slice through whole list - [0:-1].
 You can use out-of-range indexes for slicing, it would just use the edge of the list as a point.
@@ -87,6 +84,8 @@ list[1] = 10
 print(list)
 print(list3)
 
+# REV- for deep copy use "copy" built-in library, deepCopy function.
+
 
 class test2:
     pass
@@ -96,5 +95,5 @@ class test2:
 def test2():
     pass
 
-# REV- Multiple assignment: a,b = 2,3
+# REV-- Multiple assignment: a,b = 2,3
 # REV- order of operations: -3**2 = -9, as for -(3**2).
