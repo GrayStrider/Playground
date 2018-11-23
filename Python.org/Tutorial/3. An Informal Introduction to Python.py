@@ -1,16 +1,16 @@
 """
 
 Comments, docstrings #
-REV--- - floor division, power
     //, power - ** and ^
 
 Concatenate string, multiply
 String subscriptions, as in array. print("word"[3]) = d.
 Negative indicing: counting from the right: string[-1] = g
 
-REV-- result of an empty  string slice isn't None! Intuitevely, it's "" - an empty string. If we apply that to an array, the result will be the empty array.
+result of an empty  string slice isn't None! Intuitevely, it's "" - an empty string. If we apply that to an array, the result will be the empty array.
 slicing: word[0:1] = w, word[0:0] = "".
 slice through whole list - [0:-1].
+a = [1,2]
 You can use out-of-range indexes for slicing, it would just use the edge of the list as a point.
 INBETWEEN:
  +---+---+---+---+---+---+
@@ -39,8 +39,7 @@ class this:
 print(9 // 4)
 print(2 ^ 4, 2 ** 4)
 
-# REV- - raw string:
-print(r"C:\test\directory")
+print("C:\\test\\directory\\")
 
 # REV- Multiline print
 print("""\
@@ -49,7 +48,6 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 """)
 
-# REV- Auto-concatenation, for printing long lines:
 print("what does this line of long code do"
       "that")
 
@@ -84,7 +82,9 @@ list[1] = 10
 print(list)
 print(list3)
 
-# REV- for deep copy use "copy" built-in library, deepCopy function.
+
+# for deep copy use "copy" built-in library, deepCopy function.
+# Or: a = [1,2,3] a_copy = a[:]
 
 
 class test2:
@@ -95,5 +95,6 @@ class test2:
 def test2():
     pass
 
-# REV-- Multiple assignment: a,b = 2,3
-# REV- order of operations: -3**2 = -9, as for -(3**2).
+# Multiple assignment: a,b = 2,3
+# order of operations:
+# -3**2 = -9, as for -(3**2).
