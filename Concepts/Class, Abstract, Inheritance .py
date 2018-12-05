@@ -4,8 +4,6 @@ Title: $title
 Author: $author
 Price: $price
 
-REV- Class, Abstract, inheritance
-
 """
 
 from abc import ABCMeta, abstractmethod

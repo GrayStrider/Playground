@@ -1,6 +1,5 @@
 """
 
-REV-- - private elements via __.
 
 Find the largest difference between the elements in the array.
 
