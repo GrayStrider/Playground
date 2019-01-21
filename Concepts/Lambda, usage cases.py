@@ -22,3 +22,4 @@ def create_multi_lambda(n): return lambda a: a * n
 
 
 doubler = create_multi_lambda(2)
+print(doubler(3))  # 6

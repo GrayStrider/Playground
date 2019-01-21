@@ -1,3 +1,10 @@
+"""
+
+Should have used Regex
+
+"""
+
+
 def is_valid_IP(string):
     """
     req1) len after split('.') == 4
@@ -32,5 +39,5 @@ def is_valid_IP(string):
     return True
 
 
-string = '1.2 55.0.1'
+string = '123.123.123.123'
 print(is_valid_IP(string))

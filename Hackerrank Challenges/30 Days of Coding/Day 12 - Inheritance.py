@@ -22,6 +22,7 @@ class Person:
 
 class Student(Person):
     def __init__(self, firstName, lastName, id, scores):
+        super().__init__(firstName, lastName, id)
         self.firstName = firstName
         self.lastName = lastName
         self.idNumber = id
@@ -53,3 +54,4 @@ scores = list(map(int, input().split()))
 s = Student(firstName, lastName, idNum, scores)
 s.printPerson()
 print("Grade:", s.calculate())
+
